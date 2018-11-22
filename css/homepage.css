@@ -1,0 +1,349 @@
+/* we must import variables befor buttons */
+/*
+---------Media Query-----------
+*/
+/* 
+----------------Overlay---------------- 
+*/
+/*
+------prefixes mixin-------
+*/
+/*
+------animation mixin-------
+*/
+/*
+@mixin keyFrame ($animation-name, $delay, $duration, $animation) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+/*
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+/*
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+/*
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+                                                                                     /*
+}
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px; }
+
+.clearfix {
+  clear: both; }
+
+/* 
+--- Start Footer
+*/
+.footer {
+  background-color: #e2e2e2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  overflow-x: hidden; }
+  .footer .gallery, .footer .info, .footer .contact-us {
+    float: left; }
+  .footer .gallery {
+    width: 50%; }
+    .footer .gallery .img-box {
+      overflow: hidden; }
+      .footer .gallery .img-box img {
+        margin-bottom: 15px;
+        padding: 3px;
+        border: 2px solid #777;
+        width: 150px;
+        height: 150px;
+        float: left; }
+      .footer .gallery .img-box .text {
+        margin-right: 15px;
+        margin-left: 15px;
+        width: calc(100% - 180px);
+        float: left; }
+      .footer .gallery .img-box h4 {
+        margin-top: 5px;
+        color: #e2494c; }
+      .footer .gallery .img-box p {
+        color: #555;
+        line-height: 1.85;
+        margin-top: 5px; }
+  .footer .info {
+    width: 25%; }
+    .footer .info ul {
+      padding-left: 0px;
+      color: #555; }
+      .footer .info ul li {
+        line-height: 1.7; }
+        .footer .info ul li span {
+          color: #e2494c; }
+    .footer .info h4 {
+      color: #555; }
+    .footer .info p {
+      color: #555; }
+  .footer .contact-us {
+    width: 25%; }
+    .footer .contact-us input[type=text],
+    .footer .contact-us input[type=email],
+    .footer .contact-us textarea {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      outline: none;
+      font-size: 18px;
+      letter-spacing: 1.2px; }
+    .footer .contact-us textarea {
+      height: 150px;
+      resize: none; }
+  .footer .section-title {
+    color: #444;
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+  .footer .copy-right {
+    margin-top: 30px;
+    padding: 25px 0;
+    border-top: 1px solid #aaa;
+    color: #444;
+    overflow: hidden; }
+    .footer .copy-right .copyRight-text,
+    .footer .copy-right .designer {
+      float: left;
+      width: 50%; }
+    .footer .copy-right .designer {
+      text-align: right; }
+
+/* 
+--- End Footer
+*/
+.header {
+  padding: 20px 0;
+  overflow: hidden; }
+  .header .container {
+    border-bottom: 1px solid #9c9c9c;
+    overflow: hidden; }
+  .header .logo {
+    width: 30%;
+    float: left; }
+    .header .logo h1 {
+      margin-bottom: 0px;
+      margin-top: 10px; }
+  .header .navbar {
+    padding-left: 0px;
+    width: 70%;
+    float: left;
+    background-color: #e2494c;
+    border-radius: 15px; }
+    .header .navbar li {
+      width: 20%;
+      float: left;
+      text-align: center;
+      font-size: 16px; }
+      .header .navbar li a {
+        display: block;
+        text-decoration: none;
+        padding: 20px 10px;
+        color: #fff; }
+        .header .navbar li a:hover {
+          color: #ddd; }
+
+.head-with-border {
+  position: relative; }
+  .head-with-border h2 {
+    background-color: #e2494c;
+    color: #fff;
+    margin: 40px auto;
+    border-radius: 15px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 400px;
+    text-transform: uppercase; }
+    .head-with-border h2:before {
+      content: '';
+      background-color: #9c9c9c;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1.5px;
+      z-index: -1; }
+
+.main-button {
+  background-color: #e2494c;
+  color: #fff;
+  border: none;
+  text-align: center;
+  padding: 10px 15px;
+  min-width: 120px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .main-button:hover {
+    background-color: rgba(226, 73, 76, 0.8); }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px; }
+
+ul, ol {
+  list-style: none; }
+
+/*
+.product {
+    position: relative;
+    background-clip: #eee;
+    padding: 10px;
+    border: 1px solid #222;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    @include prefixer(box-shadow, 10px 10px 10px #444, webkit moz o ms);
+    @include prefixer(animation, fadeInOut 2s infinite linear, webkit moz o ms);
+//    animation: fadeInOut 2s infinite linear;
+    .overlay {
+        @include overlay;
+        background: rgba($redColor, 0.2);
+        color: #fff;
+    }
+}
+@include keyFrame (fadeInOut) {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+*/
+/* 
+--- start slider
+*/
+.slider blockquote {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: center;
+  color: #5e5e5e;
+  .
+        width: 80%;
+  margin: 30px auto; }
+.slider img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto; }
+.slider .bullets {
+  text-align: center; }
+  .slider .bullets li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #9c9c9c;
+    border-radius: 50%;
+    border: 3px solid #9c9c9c;
+    cursor: pointer; }
+    .slider .bullets li.activ, .slider .bullets li:hover {
+      background-color: #fff;
+      border: 3px solid #333; }
+
+/* 
+--- End slider
+*/
+/* 
+--- Start service
+*/
+.service {
+  font-family: "Raleway", sans-serif; }
+  .service .service-box {
+    float: left;
+    width: 33.3333333333%; }
+    .service .service-box:not(:last-of-type) {
+      padding-right: 20px; }
+    .service .service-box .service-title {
+      color: #6a6a6a; }
+      .service .service-box .service-title i {
+        position: relative;
+        top: 4px;
+        font-size: 30px; }
+    .service .service-box .service-desc {
+      color: #777;
+      line-height: 1.5; }
+    .service .service-box a {
+      color: #e2494c;
+      text-decoration: none; }
+
+/* 
+--- End service
+*/
+/* 
+--- Start Our Players
+*/
+.our-players {
+  font-family: "Raleway", sans-serif; }
+  .our-players .players-box {
+    float: left;
+    width: 20%; }
+    .our-players .players-box:not(:last-of-type) {
+      padding-right: 20px; }
+    .our-players .players-box .player-img {
+      max-width: 100%; }
+    .our-players .players-box .players-title {
+      color: #6a6a6a;
+      font-weight: normal; }
+      .our-players .players-box .players-title span {
+        font-weight: bold; }
+    .our-players .players-box .players-desc {
+      color: #777;
+      line-height: 1.5; }
+    .our-players .players-box a {
+      color: #e2494c;
+      text-decoration: none; }
+
+/* 
+--- End Our Players
+*/
+/* 
+--- Start Lorem Ipsum
+*/
+.lorem-ipsum .lorem-box {
+  float: left;
+  width: 31.3333333333%; }
+  .lorem-ipsum .lorem-box .lorem-img {
+    width: 100%; }
+  .lorem-ipsum .lorem-box:not(:last-of-type) {
+    margin-right: 3%; }
+
+/* 
+--- End Lorem Ipsum
+*/
+
+/*# sourceMappingURL=homepage.css.map */

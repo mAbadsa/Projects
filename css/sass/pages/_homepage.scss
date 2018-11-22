@@ -1,0 +1,170 @@
+/*
+.product {
+    position: relative;
+    background-clip: #eee;
+    padding: 10px;
+    border: 1px solid #222;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    @include prefixer(box-shadow, 10px 10px 10px #444, webkit moz o ms);
+    @include prefixer(animation, fadeInOut 2s infinite linear, webkit moz o ms);
+//    animation: fadeInOut 2s infinite linear;
+    .overlay {
+        @include overlay;
+        background: rgba($redColor, 0.2);
+        color: #fff;
+    }
+}
+@include keyFrame (fadeInOut) {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+*/
+/* 
+--- start slider
+*/
+
+.slider{
+    blockquote{
+        font: {
+            size: 20px;
+            style: italic;
+            weight: bold;
+            family: $paragraph-font-family;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: #5e5e5e;.
+        width: 80%;
+        margin: 30px auto;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .bullets{
+        text-align: center;
+        li{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $greyColor;
+            border-radius: 50%;
+            border: 3px solid $greyColor;
+            cursor: pointer;
+            &.activ,
+            &:hover{
+                background-color: #fff;
+                border: 3px solid #333;
+            }
+        }
+    }
+}
+
+/* 
+--- End slider
+*/
+/* 
+--- Start service
+*/
+.service{
+    font-family: $paragraph-font-family;
+    .service-box{
+        float: $float-left;
+        width: (100% /3);
+        &:not(:last-of-type){
+            padding-right: 20px;
+        }
+        .service-title {
+            color: #6a6a6a;
+            i {
+                position: relative;
+                top: 4px;
+                font-size: 30px;
+            }
+        }
+        .service-desc {
+            color: #777;
+            line-height: 1.5;
+        }
+        a {
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+/* 
+--- End service
+*/
+
+/* 
+--- Start Our Players
+*/
+.our-players{
+    font-family: $paragraph-font-family;
+    .players-box{
+        float: $float-left;
+        width: (100% /5);
+        &:not(:last-of-type){
+            padding-right: 20px;
+        }
+        .player-img{
+            max-width: 100%;
+        }
+        .players-title {
+            color: #6a6a6a;
+            font-weight: normal;
+            span{
+                font-weight: bold;
+            }
+        }
+        .players-desc {
+            color: #777;
+            line-height: 1.5;
+        }
+        a {
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+/* 
+--- End Our Players
+*/
+
+/* 
+--- Start Lorem Ipsum
+*/
+.lorem-ipsum{
+    .lorem-box{
+        .lorem-img{
+            width: 100%;
+        }
+        float: $float-left;
+        width: (94% / 3);
+        &:not(:last-of-type){
+            margin-right: 3%;
+        }
+    }
+}
+/* 
+--- End Lorem Ipsum
+*/
+
+
+
+
+
+
+
+
+

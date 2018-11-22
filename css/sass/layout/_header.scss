@@ -1,0 +1,42 @@
+.header{
+    .container{
+        border-bottom: 1px solid $greyColor;
+        overflow: hidden;
+    }
+    padding: 20px 0;
+    overflow: hidden;
+    
+    .logo{
+        width: 30%;
+        float: $float-left;
+        h1{
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
+        p{
+            
+        }
+    }
+    .navbar{
+        padding-left: 0px;
+        width: 70%;
+        float: $float-left;
+        background-color: $redColor;
+        border-radius: 15px;
+        li{
+            width: 20%;
+            float: $float-left;
+            text-align: center;
+            font-size: 16px;
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 20px 10px;
+                color: #fff;
+                &:hover {
+                    color: #ddd;
+                }
+            }
+        }
+    }
+}
